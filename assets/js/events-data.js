@@ -1,0 +1,148 @@
+const eventsData = [
+    {
+        id: 1,
+        title: "ليلة التراث العربي",
+        date: "2026/5/5",
+        time: "18:30",
+        location: "قاعة الجامعة",
+        categorey: "ثقافي",
+        image: "assets/img/torath.png",
+        map: "assets/img/mrkz.png",
+        description: "أمسية تراثية مع العروض الشعبية والأزياء التقليدية",
+        longDescription: "أمسية ساحرة تجمع بين التراث والفنون الشعبية. استمتع بعروض الدبكة والسامري والعرضة السعودية، مع أزياء تقليدية من مختلف الدول العربية. سيكون هناك ركن للتصوير التذكاري وركن للمأكولات التراثية." 
+    },
+    {
+        id: 2 ,
+        title: "بطولة كرة القدم الجامعية",
+        date: "2026/5/8",
+        time: "07:30",
+        location: "الملعب الرياضي",
+        categorey: "رياضي",
+        image: "assets/img/football.png",
+        map: "assets/img/ml3b.png",
+        description: "منافسات قوية بين الجامعات",
+        longDescription: "خاضت الجامعة الافتراضية السورية مباراة مشتعلة ضد الجامعة الوطنية الخاصة" 
+    },
+    {
+        id:3,
+        title : "  يوم العائلة الجامعي   " ,
+        date : "2025/12/11",
+        time :"9:30" ,
+        location : "حديقة جامعة حمص " ,
+        categorey : "اجتماعي" ,
+        image : "assets/img/family.jpg" ,
+        map: "assets/img/HOMS.png",
+        description : "أنشطة وألعاب للعائلات والأطفال" ,
+        longDescription : "عملت الجامعة الافتراضية السورية على تعزيز الراوابط الأسرية عن طريق تنظيم فعالية جديدة"
+    },
+    {
+        id:4 ,
+        title: " حفلة اصوات الشباب   " ,
+        date : "2025/8/15",
+        time :"18:30" ,
+        location : "المركز الثقافي" ,
+        categorey : "موسيقي" ,
+        image : "assets/img/voice.jpg" ,
+        map: "assets/img/mrlz.png",
+        description : "حفل غنائي يجمع بين فرق طلابية و مطربين صاعدين" ,
+        longDescription : "نظمت ادارة الجامعة الافتراضية حفل غنائي لاكتشاف مواهب طلابها بالتعاون مع المطربين الصاعدين" 
+    },
+    {
+        id : 5 ,
+        title : "   مهرجان الطعام التراثي " ,
+        date : "2026/1/15" ,
+        time :"8:30" ,
+        location : " الساحة الرئيسية ضمن جامعة حمص" ,
+        categorey : "ثقافي" ,
+        image : "assets/img/food.jpg" ,
+        map: "assets/img/food.png",
+        description : "تذوق أطباق من مختلف الدول العربية" ,
+        longDescription : "تم تعزيز التبادل الثقافي بين مختلف الدول العربية عن طريق مهرجان الطعام  التراثي الذي تم اقامته في الساحة الرئيسية لجامعة حمص" 
+    },
+    {
+        id : 6 ,
+        title : "   يوم الطفل الجامعي " ,
+        date : "2026/3/19" ,
+        time :"10:30" ,
+        location : "  حديقة جامعة حمص" ,
+        categorey :"اجتماعي" ,
+        image: "assets/img/kids.jpg" ,
+        map: "assets/img/HOMS.png",
+        description : "عروض مسرحية ألعاب وورش رسم" ,
+        longDescription : " عززت الجامعة الافتراضية دور الطفل في المجتمع حيث قامت بتنظيم فعالية عائلية لترسيخ هذا المفهوم" 
+    },
+    {
+        id : 7 ,
+        title : "  ورشة التصوير الفوتوغرافي " ,
+        date : "2026/4/27" ,
+        time :"14:30" ,
+        location : " مؤسسة سراج الخيرية" ,
+        categorey : "فني" ,
+        image : "assets/img/photo.jpg" ,
+        map: "assets/img/3lm.png",
+        description : "ورشة عملية مع مصور محترف" ,
+        longDescription : "  أكد مدير برنامج الإجازة في الإعلام و الاتصال على ضرورة إبقاء الطلاب على اخر المستجدات في مجال التصوير الفوتوغرافي " 
+    },
+    {
+        id : 8 ,
+        title : " بطولة كرة السلة " ,
+        date : "2025/7/2" ,
+        time :"20:45" ,
+        location : " صالة غزوان أبو زيد الرياضية" ,
+        categorey : "رياضي" ,
+        image : "assets/img/basketball.jpg" ,
+        map: "assets/img/sale.png",
+        description : "بطولة سريعة و مثيرة " ,
+        longDescription : " عملت الجامعة الافتراضية على تعزيز دور الرياضة في حياة الطلاب فقامت بتنظيم دوري رياضي ضد الجامعات الاخرى " 
+    },
+    {
+        id : 9 ,
+        title : "  ورشة تطوير المهارات الشخصية " ,
+        date : "2026/2/2" ,
+        time :"11:30" ,
+        location : " المركز الثقافي " ,
+        categorey : "تعليمي" ,
+        image : "assets/img/skills.jpg" ,
+        map: "assets/img/mrkz.png",
+        description : "تدريب على الثقة بالنفس والتواصل" ,
+        longDescription : "  نظرت الجامعة الافتراضية الى ضرورة بناء شخصية سليمة للطالب وتعزيز ثقته بنفسه فقامت بتنظيم هذه الفعالية " 
+    },
+    {
+        id : 10 ,
+        title : " معرض اللوحات والفنون التشكيلة " ,
+        date : "2026/1/25" ,
+        time :"15:30" ,
+        location : " المركز الثقافي بحمص" ,
+        categorey : "فني" ,
+        image : "assets/img/art.jpg" ,
+        map: "assets/img/mrkz.png",
+        description : "عرض اعمال الطلاب الفنية " ,
+        longDescription : " عزم الطلاب على اظهار مواهبهم فقاموا بتنسيق معرض للوحاتهم الفنية " 
+    },
+    {
+        id : 11 ,
+        title : "  امسية شعرية وموسيقية " ,
+        date : "2026/3/26" ,
+        time :"18:00" ,
+        location : " المركز الثقافي بحمص" ,
+        categorey : "ثقافي" ,
+        image : "assets/img/poet.jpg" ,
+        map: "assets/img/mrkz.png",
+        description : "قصائد وأغاني عربية أصيلة" ,
+        longDescription : "  أكد طلاب الجامعة الافتراضية على أهمية التمسك بالطرب العربي الأصيل  " 
+    },
+    {
+        id : 12 ,
+        title : " ندوة الذكاء الاصطناعي ومستقبلنا  " ,
+        date : "2025/9/15" ,
+        time :"12:00" ,
+        location : " معرض دمشق الدولي  " ,
+        categorey : "تعليمي" ,
+        image : "assets/img/nadwa ai.png" ,
+        map: "assets/img/m3rd.png",
+        description : "محاضرة ونقاش مفتوح مع متخصصين" ,
+        longDescription : "  نظم مبرمجون سوريا معرض HITECH لتعزيز مهارات طلاب هندسة المعلوماتية في البرمجة   " 
+    },
+]
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية</title>
+    <!-- main templete css file -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/80bf312ef5.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start header -->
+    <header class="header">
+        <div class="container">
+            <div  class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
+            <nav class="links">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسة</a></li>
+                    <li><a href="events.html"  class="active">الفعاليات</a></li>
+                    <li><a href="about.html" >عن الدليل</a></li>
+                    <li><a href="contact.html" >اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- start events landing -->
+    <div class="land-event">
+        <div class="container">
+            <div class="main-title">
+                <h1>جميع فعاليات الجامعة الافتراضية</h1>
+            </div>
+            <div class="events">
+                <div class="search">
+                    <form action="#">
+                        <select name="categories" id="categories"  class="select-bar">
+                            <option id="all" value="عرض الكل">عرض الكل</option>
+                            <option id="culture" value="ثقافي">ثقافي</option>
+                            <option id="culture" value="موسيقي">موسيقي</option>
+                            <option id="sport" value="رياضي">رياضي</option>
+                            <option id="edu" value="تعليمي">تعليمي</option>
+                            <option id="social" value="اجتماعي">اجتماعي</option>
+                            <option id="art" value="فني">فني</option>
+                        </select>
+                        </form>
+                    <input type="search" id="searchText" class="search-bar" name="searchbar" placeholder="ابحث عن فعالية..." />
+                </div>
+                <h2 id="catch-message"></h2>
+                <div class="events-content" id="eventsContent">
+                    <!-- events from javascipt -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end events landing -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div  class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
+            <div class="copy">
+                <p>جميع الحقوق محفوظة لدليل فعاليات الجامعة الافتراضية <span>&copy;</span></p>
+            </div>
+            <div class="social">
+                <ul class="links">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- ----------------------------------------------------------------- -->
+<script src="assets/js/events-data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية</title>
+    <!-- main templete css file -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/80bf312ef5.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start header -->
+    <header class="header">
+        <div class="container">
+            <div  class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
+            <nav class="links">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="index.html" class="active">الصفحة الرئيسة</a></li>
+                    <li><a href="events.html">الفعاليات</a></li>
+                    <li><a href="about.html" >عن الدليل</a></li>
+                    <li><a href="contact.html" >اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Start landing -->
+    <div class="landing">
+        <div class="container">
+            <div class="main-title">
+                <h1>فـعـالـيـات بـــــــــارزة لــــهــــذا الاســـبوع</h1>
+            </div>
+            <div class="landing-content" id="featuredContent">
+                <!-- events from javascript files -->
+            </div>
+
+        </div>
+    </div>
+    <!-- End landing -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- تصنيفات سريعة بداية -->
+    <div class="categories">
+        <div class="container">
+            <div class="main-title">
+                <h1>أبـرز الـتـصـنـيـفـات</h1>
+            </div>
+            <div class="categories-content">
+                <a href="events.html"><button class="btnCategory" onclick="goToEventWithFilter('عرض الكل')" id="all">عرض الكل</button></a>
+                <a href="events.html"><button class="btnCategory" onclick="goToEventWithFilter('تراثي')" id="torath">تراثي</button></a>
+                <a href="events.html"><button class="btnCategory" onclick="goToEventWithFilter('ثقافي')" id="culture">ثقافي</button></a>
+                <a href="events.html"><button class="btnCategory" onclick="goToEventWithFilter('رياضي')" id="sport">رياضي</button></a>
+                <a href="events.html"><button class="btnCategory" onclick="goToEventWithFilter('تعليمي')" id="educational">تعليمي</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="spikes"></div>
+    <!-- تصنيفات سريعة نهاية-->
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Start last events -->
+    <div class="last-events">
+        <div class="container">
+            <div class="main-title">
+                <h1>أحـدث الـفـعـالـيـات </h1>
+            </div>
+            <div class="landing-content" id="latestEvents">
+                <!-- render events from javascript -->
+            </div>    
+        </div>
+    </div>
+    <!-- End last events -->
+    <!-- -------------------------------------------------------------------->
+                <!-- start introducing -->
+        <div class="introducing">
+            <div class="container">
+                <div class="main-title">
+                    <h1>فـريـق الـعـمـل</h1>
+                </div>
+                <div class="introducing-content">
+                    <div class="introducing-card">
+                        <img src="assets/img/mofid.jpg" alt="mofed_288888">
+                        <div class="info">
+                            <div class="name">Mofed AlSakini</div>
+                            <p>HTML & CSS</p>
+                            <div class="id">moohammed_mofed_314243</div>
+                        </div>
+                    </div>
+                    <div class="introducing-card">
+                        <img src="assets/img/refaat.jpg" alt="rafat_288553">
+                        <div class="info">
+                            <div class="name">Refaat_AlKassmy</div>
+                            <p>UI\UX</p>
+                            <div class="id">rafat_288553</div>
+                        </div>
+                    </div>
+                    <div class="introducing-card">
+                        <img src="assets/img/hamza.jpg" alt="hamza_284814">
+                        <div class="info">
+                            <div class="name">Hamza_Abbara</div>
+                            <p>JavaScript</p>
+                            <div class="id">hamza_284814</div>
+                        </div>
+                    </div>
+                    <div class="introducing-card">
+                        <img src="assets/img/obada.jpg" alt="">
+                        <div class="info">
+                            <div class="name">Obada_Abbara</div>
+                            <p>HTML & CSS</p>
+                            <div class="id">obada_287504</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------->
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div  class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
+            <div class="copy">
+                <p>جميع الحقوق محفوظة لدليل فعاليات الجامعة الافتراضية <span>&copy;</span></p>
+            </div>
+            <div class="social">
+                <ul class="links">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- ------------------------------------------------------------------ -->
+<script src="assets/js/events-data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
